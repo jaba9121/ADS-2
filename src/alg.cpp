@@ -18,7 +18,7 @@ uint64_t fact(uint16_t n) {
   uint64_t result = n;
   while (count > 0) {
     result *= count;
-		count--;
+    count--;
   }
   return result;
 }
@@ -30,7 +30,7 @@ double calcItem(double x, uint16_t n) {
 }
 
 double expn(double x, uint16_t count) {
-  int cnt = count - 1;
+  int cnt = count;
   double result = 0;
   while (cnt > 0) {
     result += calcItem(x, cnt);
